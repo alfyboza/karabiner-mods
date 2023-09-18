@@ -1,0 +1,69 @@
+{
+  "rules": [
+    {
+      "description": "Home to ⌘←",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ],
+              "type": "device_unless"
+            }
+          ],
+          "from": {
+            "key_code": "home",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": "command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "End to ⌘→",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "identifiers": [
+                {
+                  "vendor_id": 1452
+                }
+              ],
+              "type": "device_unless"
+            }
+          ],
+          "from": {
+            "key_code": "end",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": "command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ],
+  "title": "Change Home and End to ⌘← and ⌘→ respectively"
+}
