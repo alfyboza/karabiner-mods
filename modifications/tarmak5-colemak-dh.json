@@ -1,0 +1,58 @@
+{
+  "title": "Tarmak 5 (Colemak-DH Transition)",
+  "rules": [
+    {
+      "description": "Tarmak 5: U→L, I→U, L→I",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "l"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "u"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
