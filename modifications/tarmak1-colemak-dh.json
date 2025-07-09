@@ -6,7 +6,12 @@
       "manipulators": [
         {
           "from": {
-            "key_code": "k"
+            "key_code": "k",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
           },
           "to": [
             {
@@ -17,7 +22,12 @@
         },
         {
           "from": {
-            "key_code": "n"
+            "key_code": "n",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
           },
           "to": [
             {
@@ -28,7 +38,12 @@
         },
         {
           "from": {
-            "key_code": "j"
+            "key_code": "j",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
           },
           "to": [
             {
@@ -39,7 +54,12 @@
         },
         {
           "from": {
-            "key_code": "e"
+            "key_code": "e",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
           },
           "to": [
             {
@@ -50,7 +70,12 @@
         },
         {
           "from": {
-            "key_code": "h"
+            "key_code": "h",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
           },
           "to": [
             {
@@ -61,7 +86,12 @@
         },
         {
           "from": {
-            "key_code": "m"
+            "key_code": "m",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
           },
           "to": [
             {
