@@ -2,7 +2,7 @@
   "title": "Tarmak 1 (Colemak-DH Transition)",
   "rules": [
     {
-      "description": "Tarmak 1: E→K, K→N, N→J, J→E + H→M, M→H",
+      "description": "Tarmak 1: E→K, K→N, N→J, J→E",
       "manipulators": [
         {
           "from": {
@@ -67,7 +67,12 @@
             }
           ],
           "type": "basic"
-        },
+        }
+      ]
+    },
+    {
+      "description": "Tarmak 1: H→M, M→H",
+      "manipulators": [
         {
           "from": {
             "key_code": "h",
