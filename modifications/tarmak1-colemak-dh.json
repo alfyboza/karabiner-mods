@@ -106,6 +106,22 @@
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "Caps Lock → Backspace",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
     }
   ]
 }
