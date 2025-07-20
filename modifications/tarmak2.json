@@ -1,0 +1,74 @@
+{
+  "title": "Tarmak 2 (Colemak-DH Transition)",
+  "rules": [
+    {
+      "description": "Tarmak 2: E→F, T→G, F→T, G→J",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "g"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "t"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "j"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

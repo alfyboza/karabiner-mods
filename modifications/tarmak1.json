@@ -71,43 +71,6 @@
       ]
     },
     {
-      "description": "Tarmak 1: H→M, M→H",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "optional": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "m"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "optional": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "h"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
       "description": "Caps Lock → Backspace",
       "manipulators": [
         {
@@ -117,6 +80,73 @@
           "to": [
             {
               "key_code": "delete_or_backspace"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Ctrl+Shift+Space → Toggle between QWERTY and Tarmak1 (E) profiles",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'QWERTY'"
+            },
+            {
+              "set_variable": {
+                "name": "profile_toggle",
+                "value": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "variable_unless": {
+                "name": "profile_toggle",
+                "value": 1
+              }
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'Tarmak1 (E)'"
+            },
+            {
+              "set_variable": {
+                "name": "profile_toggle",
+                "value": 0
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "variable_if": {
+                "name": "profile_toggle",
+                "value": 1
+              }
             }
           ],
           "type": "basic"

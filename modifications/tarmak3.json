@@ -2,7 +2,7 @@
   "title": "Tarmak 3 (Colemak-DH Transition)",
   "rules": [
     {
-      "description": "Tarmak 3: S→R, D→S + R→J, C→D",
+      "description": "Tarmak 3: S→R, D→S, G→D, R→J",
       "manipulators": [
         {
           "from": {
@@ -38,6 +38,22 @@
         },
         {
           "from": {
+            "key_code": "g",
+            "modifiers": {
+              "optional": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
             "key_code": "r",
             "modifiers": {
               "optional": [
@@ -48,22 +64,6 @@
           "to": [
             {
               "key_code": "j"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "optional": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "d"
             }
           ],
           "type": "basic"
